@@ -1,0 +1,23 @@
+import "../css/Userlogin.css"
+const UserLogin = () => {
+  return (
+    <div className="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg_image">
+      <div className="card p-4 shadow text-center form_styling" style={{ width: "350px" }}>
+        <div>
+          <img src="booking_logo.png" alt="web_logo" className="mb-3" style={{ width: "75px" }} />
+        </div>
+        <div className="mb-3">
+          <p className="login_font">Please enter your mobile number or email address for verification</p>
+        </div>
+        <div className="my-3">
+          <input type="email" className="form-control" placeholder="Enter email address" />
+        </div>
+        <div className="mt-5">
+          <button className="button-primary w-100">Send Verification Code</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default UserLogin;
