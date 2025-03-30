@@ -1,4 +1,4 @@
-import "../css/Userlogin.css"
+import "../css/Userlogin.css";
 const UserOtp = () => {
     return (
         <div className="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg_image">

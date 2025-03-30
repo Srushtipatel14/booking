@@ -4,3 +4,12 @@
   --primary-sub-color: #040404;
   --secondary-sub-color: #FFFFFF;
 }
+
+.text_font{
+  color:var(--primary-main-color);
+}
+
+.title_font{
+  font-weight: bold;
+  font-size: 24px;
+}

@@ -1,0 +1,49 @@
+/* ================================= carousel css ======================================= */
+.carousel-container {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .swiper {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px; /* Apply border radius */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+  
+  /* Pagination Dots */
+  .swiper-pagination-bullet {
+    background: gray;
+    opacity: 0.7;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: black;
+    opacity: 1;
+  }
+  
+  /* ================================= carousel css ======================================= */
+  

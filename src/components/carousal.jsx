@@ -1,69 +1,41 @@
-// import { Carousel } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import '../css/carousel.css';
 
-// const Carousal = () => {
-//     return (
-//         <Carousel>
-//             <Carousel.Item>
-//                 <img className="d-block w-100 " src="movie.jpg" alt="First slide" />
-//             </Carousel.Item>
-//             <Carousel.Item>
-//                 <img className="d-block w-100" src="theater.jpg" alt="Second slide" />
-//             </Carousel.Item>
-//             <Carousel.Item>
-//                 <img className="d-block w-100" src="cinema.jpg" alt="Third slide" />
-//             </Carousel.Item>
-//         </Carousel>
-//     );
-// };
-
-// export default Carousal;
-import { Carousel } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-const Carousal = () => {
-    return (
-        <div style={{ height: "50vh", overflow: "hidden" }}>
-            <Carousel fade indicators={false}>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="movie.jpg"
-                        alt="First slide"
-                        style={{
-                            height: "50vh",
-                            objectFit: "cover",
-                            objectPosition: "center 20%"
-                        }}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="theater.jpg"
-                        alt="Second slide"
-                        style={{
-                            height: "50vh",
-                            objectFit: "cover",
-                            objectPosition: "center 60%"
-                        }}
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="cinema.jpg"
-                        alt="Third slide"
-                        style={{
-                            height: "50vh",
-                            objectFit: "cover",
-                            objectPosition: "center 40%"
-                        }}
-                    />
-                </Carousel.Item>
-            </Carousel>
-        </div>
-    );
+const Carousel = () => {
+  return (
+    <div className="carousel-container py-3">
+      <Swiper
+        slidesPerView={1}
+        centeredSlides={true}
+        loop={true}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true, // IMPORTANT -> Stop on hover
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination, EffectFade]}
+      >
+        <SwiperSlide>
+          <div className="carousel-slide">Slide 1</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="carousel-slide">Slide 2</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="carousel-slide">Slide 3</div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
 };
 
-export default Carousal;
+export default Carousel;
