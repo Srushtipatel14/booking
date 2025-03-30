@@ -4,7 +4,7 @@ import RecommendedMovie from "./recommendedMovie";
 
 const Home =()=>{
     return(
-        <div>
+        <div className="container-fluid p-0">
             <Navbar/>
             <Carousal/>
             <RecommendedMovie/>

@@ -24,7 +24,7 @@
 .card {
   border: none !important;
   border-radius: 10px !important;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .rating_card {
