@@ -2,7 +2,7 @@ import "../css/Userlogin.css";
 const UserOtp = () => {
     return (
         <div className="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg_image">
-            <div className="card p-4 shadow text-center form_styling" style={{ width: "350px" }}>
+           <div className="card p-4 text-center form_styling" style={{ width: "350px" }}>
                 <div>
                     <img src="booking_logo.png" alt="web_logo" className="mb-3" style={{ width: "75px" }} />
                 </div>

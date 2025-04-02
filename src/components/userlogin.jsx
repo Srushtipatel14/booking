@@ -2,12 +2,12 @@ import "../css/Userlogin.css"
 const UserLogin = () => {
   return (
     <div className="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg_image">
-      <div className="card p-4 shadow text-center form_styling" style={{ width: "350px" }}>
+      <div className="card p-4 text-center form_styling" style={{ width: "350px" }}>
         <div>
           <img src="booking_logo.png" alt="web_logo" className="mb-3" style={{ width: "75px" }} />
         </div>
         <div className="mb-3">
-          <p className="login_font">Please enter your mobile number or email address for verification</p>
+          <p className="login_font">Please enter your email address for verification</p>
         </div>
         <div className="my-3">
           <input type="email" className="form-control" placeholder="Enter email address" />
