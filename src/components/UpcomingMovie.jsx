@@ -1,19 +1,20 @@
 import "../css/recommended.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
+import { Card } from "react-bootstrap";
 
-const RecommendedMovie = () => {
+const UpcomingMovie = () => {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0" style={{backgroundColor:"#2C2B2B"}}>
       <div className="movie_wrapper mx-auto">
         <div className="d-flex justify-content-between mb-2 first_movie_sec">
-          <p className="title_font">Recommended Movies</p>
+          <p className="title_font text-light mt-3">Upcoming Movies</p>
           <p className="text_font d-flex align-items-center gap-1">
             See All <IoIosArrowForward />
           </p>
         </div>
 
-        <div className="movie_scroll">
+        <div className="movie_scroll mb-3">
           {[1, 2, 3, 4, 5, 6, 7].map((item) => (
             <div key={item} className="movie-card p-0">
               <div style={{ height: "350px" }}>
@@ -42,4 +43,4 @@ const RecommendedMovie = () => {
   );
 };
 
-export default RecommendedMovie;
+export default UpcomingMovie;

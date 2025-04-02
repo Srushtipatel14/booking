@@ -1,6 +1,6 @@
 .movie_wrapper {
   width: 90%;
-  
+  overflow: hidden;
 }
 
 .movie_scroll {
@@ -11,14 +11,16 @@
   scrollbar-width: none;
   padding-bottom: 10px;
 }
+
 .movie_scroll::-webkit-scrollbar {
   display: none;
 }
 
 .movie-card {
-  width: 250px;
+  width: 268px;
   position: relative;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .card {

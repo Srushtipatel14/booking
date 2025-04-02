@@ -31,7 +31,7 @@ const Navbar = () => {
                   className="form-control border-start-0"
                   placeholder="Search for Cinemas and Movies"
                   aria-label="Search"
-                  style={{ width: "250px" }}
+                  style={{ width: "250px",minWidth:"300px" }}
                 />
               </div>
             </form>
