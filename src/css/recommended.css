@@ -26,7 +26,6 @@
 .card {
   border: none !important;
   border-radius: 10px !important;
-  /* overflow: hidden; */
 }
 
 .rating_card {
@@ -40,3 +39,10 @@
   padding: 3px;
 }
 
+.add_box{
+  background-color: grey;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  height: 100px;
+}

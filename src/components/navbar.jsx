@@ -41,7 +41,7 @@ const Navbar = () => {
               <p className="m-0">Ahmedabad</p>
               <IoIosArrowDown size={18} />
             </div>
-            <div className="d-flex align-items-center gap-2">
+            {/* <div className="d-flex align-items-center gap-2">
               <img
                 src="user.png"
                 alt="user"
@@ -52,6 +52,10 @@ const Navbar = () => {
                 }}
               />
               <p className="m-0 d-none d-sm-block">Hi, Guest</p>
+            </div> */}
+
+            <div className="d-flex align-items-center gap-2">
+              <button className="signin_btn">Sign in</button>
             </div>
           </div>
         </nav>
