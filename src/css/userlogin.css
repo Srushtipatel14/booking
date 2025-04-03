@@ -29,7 +29,7 @@
   width: 90%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   .navbar-wrapper {
     width: 100%;
   }
@@ -47,4 +47,24 @@
   border-radius: 5px;
   background-color: var( --primary-main-color);
   color: var(--secondary-sub-color);
+}
+
+.search-input {
+  width: 450px !important;
+  transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .search-input {
+    width: 230px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 180px !important;
+  }
+  .offcanvas.offcanvas-end{
+    width: 300px !important;
+  }
 }

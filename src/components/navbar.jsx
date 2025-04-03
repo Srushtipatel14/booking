@@ -1,11 +1,15 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
+import { Offcanvas } from "react-bootstrap";
+import { useState } from "react";
+import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
+  const [canvasshow, setCanvasShow] = useState(false);
   return (
     <div className="container-fluid p-0 bg-light">
       <div className="navbar-wrapper mx-auto">
-        <nav className="navbar navbar-light  px-4 py-2 d-flex justify-content-between align-items-center">
+        <nav className="navbar navbar-light px-2 py-2 d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center gap-4">
             <div className="d-flex align-items-center gap-1">
               <img
@@ -14,7 +18,7 @@ const Navbar = () => {
                 style={{ width: "45px", height: "45px" }}
               />
               <p
-                className="m-0 fs-4 d-none d-sm-block"
+                className="m-0 fs-4 d-none d-md-block"
                 style={{ lineHeight: "1", position: "relative", top: "-3px" }}
               >
                 Bookzy
@@ -28,11 +32,11 @@ const Navbar = () => {
                 </span>
                 <input
                   type="text"
-                  className="form-control border-start-0"
+                  className="form-control border-start-0 search-input"
                   placeholder="Search for Cinemas and Movies"
                   aria-label="Search"
-                  style={{ width: "250px",minWidth:"300px" }}
                 />
+
               </div>
             </form>
           </div>
@@ -56,6 +60,12 @@ const Navbar = () => {
 
             <div className="d-flex align-items-center gap-2">
               <button className="signin_btn">Sign in</button>
+              <IoMenu size={32} onClick={() => setCanvasShow(true)} />
+              <Offcanvas
+                show={canvasshow}
+                onHide={() => setCanvasShow(false)}
+                placement="end"
+              ></Offcanvas>
             </div>
           </div>
         </nav>
