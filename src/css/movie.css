@@ -1,0 +1,14 @@
+.movie_detail{
+    background-color: var(--secondary-main-color);
+}
+
+.movie_left{
+    width:250px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.movie_right{
+    width: 70%;
+}

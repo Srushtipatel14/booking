@@ -4,6 +4,7 @@ import UserLogin from "./components/userlogin";
 import UserOtp from "./components/otpscreen";
 import Success from "./components/success";
 import Searchfield from "./components/search";
+import Movie from "./components/movie";
 import "./App.css";
 
 import Routepage from "./components/route";
@@ -18,6 +19,7 @@ function App() {
           <Route path="userlogin" element={<UserLogin />} />
           <Route path="userotp" element={<UserOtp />} />
           <Route path="success" element={<Success />} />
+          <Route path="movie" element={<Movie />} />
         </Route>
         <Route path="/search" element={<Searchfield/>}/>
       </Routes>

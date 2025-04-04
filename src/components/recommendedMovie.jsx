@@ -1,8 +1,10 @@
 import "../css/recommended.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-
+import {useNavigate} from "react-router-dom"
 const RecommendedMovie = () => {
+  const navigate=useNavigate();
+  
   return (
     <div className="container-fluid p-0">
       <div className="movie_wrapper mx-auto">
@@ -15,7 +17,7 @@ const RecommendedMovie = () => {
 
         <div className="movie_scroll">
           {[1, 2, 3, 4, 5, 6, 7].map((item) => (
-            <div key={item} className="movie-card p-0">
+            <div key={item} className="movie-card p-0" onClick={()=>navigate("/movie")}>
               <div style={{ height: "350px" }}>
                 <img
                   src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwFBFgTscQ8nz7a0Vi3BbA5OU0M4Wuu7itw&s`}
