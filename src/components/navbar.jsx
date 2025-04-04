@@ -96,6 +96,15 @@ const Navbar = () => {
             </div>
           </form>
         </Modal.Header>
+        <Modal.Body>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+          { ["Ahmedabad","Surat","Vijapur","Visnagar","Valsad","Vadodara","Mahesana"].map((item, index) => (
+            <span key={index} className="city_modal" >
+              {item}
+            </span>
+          ))}
+        </div>
+        </Modal.Body>
       </Modal>
     </div>
   );

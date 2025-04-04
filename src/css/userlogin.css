@@ -76,3 +76,10 @@
 .custom_modal{
   border-radius: 0px !important;
 }
+
+.city_modal{
+ padding: 8px 10px;
+ border-radius:20px;
+ cursor: pointer;
+ border: 1px solid var( --primary-main-color);
+}
