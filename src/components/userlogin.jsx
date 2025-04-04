@@ -1,8 +1,18 @@
-import "../css/Userlogin.css"
+import "../css/Userlogin.css";
+import { useNavigate } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
+
 const UserLogin = () => {
+  const navigate = useNavigate();
   return (
-    <div className="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg_image">
+    <div className="container-fluid flex-grow-1 d-flex justify-content-center align-items-center bg_image">
       <div className="card p-4 text-center form_styling" style={{ width: "350px" }}>
+        <div
+          className="position-absolute top-0 start-0 m-3"
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate(-1)} >
+          <FiArrowLeft size={20} />
+        </div>
         <div>
           <img src="booking_logo.png" alt="web_logo" className="mb-3" style={{ width: "75px" }} />
         </div>
@@ -13,7 +23,7 @@ const UserLogin = () => {
           <input type="email" className="form-control" placeholder="Enter email address" />
         </div>
         <div className="mt-5">
-          <button className="button-primary w-100">Send Verification Code</button>
+          <button className="button-primary w-100" onClick={() => navigate("/userotp")}>Send Verification Code</button>
         </div>
       </div>
     </div>

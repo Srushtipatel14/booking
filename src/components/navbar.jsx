@@ -3,9 +3,12 @@ import { IoSearch } from "react-icons/io5";
 import { Offcanvas } from "react-bootstrap";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [canvasshow, setCanvasShow] = useState(false);
+  const [bottomCanvas,setBottomCanvas]=useState(false)
+  const navigate =useNavigate();
   return (
     <div className="container-fluid p-0 bg-light">
       <div className="navbar-wrapper mx-auto">
@@ -35,6 +38,7 @@ const Navbar = () => {
                   className="form-control border-start-0 search-input"
                   placeholder="Search for Cinemas and Movies"
                   aria-label="Search"
+                  onClick={()=>setBottomCanvas(true)}
                 />
 
               </div>
@@ -59,7 +63,7 @@ const Navbar = () => {
             </div> */}
 
             <div className="d-flex align-items-center gap-2">
-              <button className="signin_btn">Sign in</button>
+              <button className="signin_btn" onClick={()=>navigate("userlogin")}>Sign in</button>
               <IoMenu size={32} onClick={() => setCanvasShow(true)} />
               <Offcanvas
                 show={canvasshow}
@@ -70,6 +74,10 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
+
+      <Offcanvas show={bottomCanvas} onHide={()=>setBottomCanvas(false)} placement="bottom">
+
+      </Offcanvas>
     </div>
   );
 };

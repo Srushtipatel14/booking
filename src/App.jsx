@@ -1,21 +1,25 @@
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
-import UserOtp from "./components/otpscreen";
 import UserLogin from "./components/userlogin";
+import UserOtp from "./components/otpscreen";
 import Success from "./components/success";
+import "./App.css";
+
+import Routepage from "./components/route";
 function App() {
 
- 
+
   return (
-  <Router>
-    <Routes>
-    <Route path="" element={<Home/>}></Route>
-      <Route path="userlogin" element={<UserLogin/>}></Route>
-      <Route path="userotp" element={<UserOtp/>}></Route>
-      <Route path="success" element={<Success/>}></Route>
-    </Routes>
-  </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Routepage />}>
+          <Route index element={<Home />} />
+          <Route path="userlogin" element={<UserLogin />} />
+          <Route path="userotp" element={<UserOtp />} />
+          <Route path="success" element={<Success />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 
