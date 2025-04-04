@@ -68,3 +68,11 @@
     width: 300px !important;
   }
 }
+
+.search_top{
+  background-color:rgba(237, 237, 237, 0.5);
+}
+
+.custom_modal{
+  border-radius: 0px !important;
+}

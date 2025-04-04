@@ -1,14 +1,14 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { Offcanvas } from "react-bootstrap";
+import { Offcanvas, Modal } from "react-bootstrap";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [canvasshow, setCanvasShow] = useState(false);
-  const [bottomCanvas,setBottomCanvas]=useState(false)
-  const navigate =useNavigate();
+  const [topCanvas, setTopCanvas] = useState(false)
+  const navigate = useNavigate();
   return (
     <div className="container-fluid p-0 bg-light">
       <div className="navbar-wrapper mx-auto">
@@ -38,16 +38,18 @@ const Navbar = () => {
                   className="form-control border-start-0 search-input"
                   placeholder="Search for Cinemas and Movies"
                   aria-label="Search"
-                  onClick={()=>setBottomCanvas(true)}
+                  onClick={() => navigate("/search")}
+                  onKeyDown={() => navigate("/search")}
+                  style={{ outline: "none", boxShadow: "none" }}
                 />
 
               </div>
             </form>
           </div>
           <div className="d-flex align-items-center gap-4">
-            <div className="d-flex align-items-center gap-1">
+            <div className="d-flex align-items-center gap-1" onClick={() => setTopCanvas(true)}>
               <p className="m-0">Ahmedabad</p>
-              <IoIosArrowDown size={18} />
+              <IoIosArrowDown size={18}  />
             </div>
             {/* <div className="d-flex align-items-center gap-2">
               <img
@@ -63,7 +65,7 @@ const Navbar = () => {
             </div> */}
 
             <div className="d-flex align-items-center gap-2">
-              <button className="signin_btn" onClick={()=>navigate("userlogin")}>Sign in</button>
+              <button className="signin_btn" onClick={() => navigate("userlogin")}>Sign in</button>
               <IoMenu size={32} onClick={() => setCanvasShow(true)} />
               <Offcanvas
                 show={canvasshow}
@@ -75,9 +77,26 @@ const Navbar = () => {
         </nav>
       </div>
 
-      <Offcanvas show={bottomCanvas} onHide={()=>setBottomCanvas(false)} placement="bottom">
-
-      </Offcanvas>
+      <Modal show={topCanvas} onHide={() => setTopCanvas(false)} contentClassName="custom_modal">
+        <Modal.Header className="border-0" >
+          <form style={{ width: "100%" }}>
+            <div className="input-group">
+              <input
+                type="text"
+                className="form-control search-input"
+                placeholder="Search for Cinemas and Movies"
+                aria-label="Search"
+                style={{
+                  outline: "none",
+                  boxShadow: "none",
+                  borderRadius: "0px",
+                  height: "3rem",
+                }}
+              />
+            </div>
+          </form>
+        </Modal.Header>
+      </Modal>
     </div>
   );
 };
