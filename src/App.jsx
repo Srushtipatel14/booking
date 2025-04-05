@@ -5,6 +5,8 @@ import UserOtp from "./components/otpscreen";
 import Success from "./components/success";
 import Searchfield from "./components/search";
 import Movie from "./components/movie";
+import Show from "./components/show";
+import Seat from "./components/seat";
 import "./App.css";
 
 import Routepage from "./components/route";
@@ -20,8 +22,10 @@ function App() {
           <Route path="userotp" element={<UserOtp />} />
           <Route path="success" element={<Success />} />
           <Route path="movie" element={<Movie />} />
+          <Route path="showList" element={<Show />} />
+          <Route path="seat" element={<Seat />} />
         </Route>
-        <Route path="/search" element={<Searchfield/>}/>
+        <Route path="/search" element={<Searchfield />} />
       </Routes>
     </Router>
   )
