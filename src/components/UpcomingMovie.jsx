@@ -1,7 +1,6 @@
 import "../css/recommended.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-import { Card } from "react-bootstrap";
 
 const UpcomingMovie = () => {
   return (

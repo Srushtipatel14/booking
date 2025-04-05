@@ -1,14 +1,57 @@
 import "../css/movie.css";
-const Movie=()=>{
-    return(
-        <div className="container-fluid my-3 p-0 ">
-        <div className="d-flex justify-content-center align-items-center movie_detail">
-            <div className="movie_left ">
+import { FaStar } from "react-icons/fa";
+import Footer from "./footer";
+const Movie = () => {
+    return (
+        <div className="container-fluid mt-3 p-0 ">
+            <div className="d-flex align-items-center movie_detail">
+                <div className="movie_left my-5 ms-5 me-3">
+                </div>
+                <div className="movie_right mx-3">
+                    <p className="display-5">Sikandar</p>
+                    <div className="d-flex movie_rate_section">
+                        <p className="m-0 d-flex align-items-center fs-5 gap-1">
+                            <FaStar size={20} color="red" />
+                            8/10 (37.3K votes)
+                        </p>
+                        <button className="movie_rate_btn">Rate Now</button>
+                    </div>
+                    <div className="movie_type_lan">
+                        <div className="movie_type_sec">2D,3D,4D</div>
+                        <div className="movie_lan_sec">Hindi,English</div>
+                    </div>
+                    <div className="d-flex">
+                        <p>2h 13m</p>
+                        <ul>
+                            <li>Action,Drama</li>
+                            <li>30 Mar,2025</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button className="movie_book_btn">Book tickets</button>
+                    </div>
+                </div>
             </div>
-            <div className="movie_right">
+            <div className="about_movie py-4">
+                <p className="about_movie_title">About The Movie</p>
+                <p>
+                    Sikandar follows the journey of a man who overcomes all hurdles that life throws his way just so that he can alleviate the plight of the less fortunate and those in need of his help. His transition from a nonchalant man to a selfless man, inspired by his wife, makes him emerge as a beacon of hope for those ensnared in darkness.
+                </p>
             </div>
+            <div className="about_movie py-4">
+                <p className="about_movie_title">Cast</p>
 
-        </div>
+                <div className="cast_scroll mt-4">
+                    {[1, 2, 3, 4, 5, 6, 7].map((item) => (
+                        <div key={item} className="cast-card p-0">
+                            <img className="cast_img" src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg" alt="cast_image" />
+                            <p>Jannelia D'suza</p>
+                            <p>Actor</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 }
