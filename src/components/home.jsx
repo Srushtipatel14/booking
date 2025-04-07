@@ -7,9 +7,9 @@ const Home =()=>{
     return(
         <div className="container-fluid p-0">
             <Carousal/>
-            {/* <RecommendedMovie/> */}
+            <RecommendedMovie/>
             <Ad/>
-            {/* <UpcomingMovie/> */}
+            <UpcomingMovie/>
             <Footer/>
         </div>
     )
