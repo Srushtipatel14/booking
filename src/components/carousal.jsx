@@ -24,7 +24,7 @@ const Carousel = () => {
         }}
         modules={[Autoplay, Pagination, EffectFade]}
       >
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <div className="carousel-slide carousel-slide1">
             <div className='left_carousel1 d-sm-block p-sm-3 w-100'>
               <div className="d-flex align-items-center gap-1 mb-4 d-none d-md-flex">
@@ -51,7 +51,7 @@ const Carousel = () => {
               <img src="ticket.png" alt="ticket_image" style={{ height: "350px", maxWidth: "330px", width: "300px" }} />
             </div>
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-slide carousel-slide2">
             <div className='left_carousel2 d-sm-block p-sm-3 w-100'>
@@ -60,10 +60,10 @@ const Carousel = () => {
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <div className="carousel-slide carousel-slide3">
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
     </div>
   );
