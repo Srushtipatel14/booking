@@ -32,9 +32,11 @@ color: white;
     color: var( --secondary-sub-color);
     padding: 7px 15px;
     margin: 0 10px;
+    border: none;
 }
 
 .movie_book_btn{
+    border: none;
     background-color: var( --primary-main-color);
     border-radius: 10px;
     color: var( --secondary-sub-color);

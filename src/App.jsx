@@ -23,9 +23,9 @@ function App() {
           <Route path="success" element={<Success />} />
           <Route path="movie" element={<Movie />} />
           <Route path="showList" element={<Show />} />
-          <Route path="seat" element={<Seat />} />
         </Route>
         <Route path="/search" element={<Searchfield />} />
+        <Route path="/seat" element={<Seat />} />
       </Routes>
     </Router>
   )

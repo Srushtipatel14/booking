@@ -1,5 +1,6 @@
 import "../css/show.css";
 import { useNavigate } from "react-router-dom";
+import { IoSearch } from "react-icons/io5";
 
 const Show = () => {
     const navigate = useNavigate()
@@ -16,20 +17,26 @@ const Show = () => {
                         ))}
                     </div>
                 </div>
-                <hr/>
-                <div className="d-flex mt-1 show_detail_title show_detail_title_ext ">
-                    <div className="show_detail_sec2 pb-2 w-100">
-                        <div className="d-flex overflow-x-auto w-50">
+                <div className="hrLine"></div>
+                <div className="d-flex show_detail_title show_detail_title_ext">
+                    <div className="show_detail_sec2 w-100">
+                        <div className="d-flex show_Date_sec">
                             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
-                                <div key={index} className="show_detail_date px-4 py-2">{item}</div>
+                                <div key={index} className="show_detail_date px-3 py-2 text-center flex-column">
+                                    <div className="date-day">fri</div>
+                                    <div className="date-date">04</div>
+                                    <div className="date-month">apr</div>
+                                </div>
                             ))}
                         </div>
-                        <div className="d-flex d-none d-md-block">
-                            <div className="show_detail_ext">Hindi-2D</div>
+                        <div className="show_filter_sec">
+                            <div className="show_detail_ext ms-auto">Hindi-2D</div>
                             <div className="show_detail_ext">Price Range</div>
+                            <div className="show_detail_ext"> <IoSearch size={18} /></div>
                         </div>
                     </div>
                 </div>
+                <div className="hrLine1"></div>
             </div>
 
             <div className="p-0 mt-3 show_detail_title show_data">
@@ -40,7 +47,7 @@ const Show = () => {
                                 <div className="show_movie_name_left"><p className="fs-6">Sikandar</p></div>
                                 <div className="show_movie_name_right">
                                     {["1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM", "1:00 PM"].map((item, index) => (
-                                        <div className="show_movie_time" onClick={() => navigate("seat")} key={index}>{item}</div>
+                                        <div className="show_movie_time" onClick={() => navigate("/seat")} key={index}>{item}</div>
                                     ))}
                                 </div>
                             </div>
