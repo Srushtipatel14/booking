@@ -7,8 +7,9 @@
     background-color: rgb(238, 236, 236);
 }
 
-.show_inner_detail{
-    background-color: var(--secondary-sub-color);
+.show_inner_detail {
+  background-color: var(--secondary-sub-color);
+  box-shadow: 0 3px 3px -2px lightgrey;
 }
 
   @media (max-width: 855px) {
@@ -54,12 +55,12 @@
     -ms-overflow-style: auto;
   }
 
-  .show_detail_ext{
+  /* .show_detail_ext{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid lightgray;
-  }
+  } */
 
   .show_data{
     background-color: var(--secondary-sub-color);
