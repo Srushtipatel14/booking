@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="d-flex align-items-center gap-4">
             <div className="d-flex align-items-center gap-1" onClick={() => setTopCanvas(true)}>
               <p className="m-0">Ahmedabad</p>
-              <IoIosArrowDown size={18}  />
+              <IoIosArrowDown style={{cursor:"pointer"}} size={18} />
             </div>
             {/* <div className="d-flex align-items-center gap-2">
               <img
@@ -66,12 +66,31 @@ const Navbar = () => {
 
             <div className="d-flex align-items-center gap-2">
               <button className="signin_btn" onClick={() => navigate("userlogin")}>Sign in</button>
-              <IoMenu size={32} onClick={() => setCanvasShow(true)} />
+              <IoMenu size={32} style={{cursor:"pointer"}} onClick={() => setCanvasShow(true)} />
               <Offcanvas
                 show={canvasshow}
                 onHide={() => setCanvasShow(false)}
                 placement="end"
-              ></Offcanvas>
+              >
+                <div className="d-flex justify-content-between align-items-center px-3 py-2">
+                  <div>
+                    <p className="fs-3 fw-bold m-0">Hey!</p>
+                    <span style={{ fontSize: "14px",cursor:"pointer" }} onClick={()=>{
+                      setCanvasShow(false);
+                      navigate("/editprofile")
+                    }}>Edit Profile</span>
+                  </div>
+                  <div> <img
+                    src="user.png"
+                    alt="user"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                    }}
+                  /></div>
+                </div>
+              </Offcanvas>
             </div>
           </div>
         </nav>
@@ -98,12 +117,12 @@ const Navbar = () => {
         </Modal.Header>
         <Modal.Body>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-          { ["Ahmedabad","Surat","Vijapur","Visnagar","Valsad","Vadodara","Mahesana"].map((item, index) => (
-            <span key={index} className="city_modal" >
-              {item}
-            </span>
-          ))}
-        </div>
+            {["Ahmedabad", "Surat", "Vijapur", "Visnagar", "Valsad", "Vadodara", "Mahesana"].map((item, index) => (
+              <span key={index} className="city_modal" >
+                {item}
+              </span>
+            ))}
+          </div>
         </Modal.Body>
       </Modal>
     </div>
