@@ -62,9 +62,11 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-slide carousel-slide3">
+           <div className='center_slide3 display-3'>Every great story deserves a great screen</div>
           </div>
         </SwiperSlide>
       </Swiper>
+      
     </div>
   );
 };
