@@ -1,7 +1,8 @@
 import "../css/editprofile.css";
+import Footer from "./footer";
 const EditProfile = () => {
     return (
-        <div className="container-fluid edit_profile m-0 py-3">
+        <div className="container-fluid edit_profile pt-3">
             <div className="edit_detail">
                 <form>
                     <section className="acc_detail my-3">
@@ -90,6 +91,7 @@ const EditProfile = () => {
                     </section>
                 </form>
             </div>
+            <Footer/>
         </div>
     )
 }

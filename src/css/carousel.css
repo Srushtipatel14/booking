@@ -136,3 +136,7 @@
 
 
 /* ================================= carousel slide 2 =================================== */
+
+.carousel-slide3{
+  background: radial-gradient(circle at center,rgb(0, 4, 53,0.6), rgb(1, 1, 1));
+}

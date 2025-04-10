@@ -1,5 +1,6 @@
 .edit_profile {
     background-color: lightgray;
+    --bs-gutter-x:0 !important;
 }
 
 .edit_detail {

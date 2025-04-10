@@ -8,7 +8,7 @@ const UpcomingMovie = () => {
       <div className="movie_wrapper mx-auto">
         <div className="d-flex justify-content-between mb-2 first_movie_sec">
           <p className="title_font text-light mt-3">Upcoming Movies</p>
-          <p className="text_font d-flex align-items-center gap-1">
+          <p className="text_font d-flex align-items-center gap-1" style={{cursor:"pointer"}}>
             See All <IoIosArrowForward />
           </p>
         </div>
