@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navbar-wrapper mx-auto">
         <nav className="navbar navbar-light px-2 py-2 d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center gap-4">
-            <div className="d-flex align-items-center gap-1">
+            <div className="d-flex align-items-center gap-1" style={{cursor:"pointer"}} onClick={()=>navigate("/")}>
               <img
                 src="booking_logo.png"
                 alt="web_logo"

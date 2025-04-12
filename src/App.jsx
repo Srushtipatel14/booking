@@ -8,6 +8,7 @@ import Movie from "./components/movie";
 import Show from "./components/show";
 import Seat from "./components/seat";
 import EditProfile from "./components/editProfile";
+import RecommendedAll from "./components/recommendedAll";
 import "./App.css";
 
 import Routepage from "./components/route";
@@ -25,6 +26,7 @@ function App() {
           <Route path="movie" element={<Movie />} />
           <Route path="showList" element={<Show />} />
           <Route path="editprofile" element={<EditProfile/>}/>
+          <Route path="recommendedall" element={<RecommendedAll/>}/>
         </Route>
         <Route path="/search" element={<Searchfield />} />
         <Route path="/seat" element={<Seat />} />
