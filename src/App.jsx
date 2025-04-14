@@ -9,6 +9,7 @@ import Show from "./components/show";
 import Seat from "./components/seat";
 import EditProfile from "./components/editProfile";
 import RecommendedAll from "./components/recommendedAll";
+import Cinema from "./components/cinema";
 import "./App.css";
 
 import Routepage from "./components/route";
@@ -24,6 +25,7 @@ function App() {
           <Route path="userotp" element={<UserOtp />} />
           <Route path="success" element={<Success />} />
           <Route path="movie" element={<Movie />} />
+          <Route path="cinema" element={<Cinema />} />
           <Route path="showList" element={<Show />} />
           <Route path="editprofile" element={<EditProfile/>}/>
           <Route path="recommendedall" element={<RecommendedAll/>}/>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
   --primary-main-color: #d71921;
   --secondary-main-color: #2C2B2B;
@@ -5,11 +6,15 @@
   --secondary-sub-color: #FFFFFF;
 }
 
-.text_font{
-  color:var(--primary-main-color);
+.text_font {
+  color: var(--primary-main-color);
 }
 
-.title_font{
-  font-weight:600;
+.title_font {
+  font-weight: 600;
   font-size: 28px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
 }

@@ -38,7 +38,7 @@ const Movie = () => {
                             </ul>
                         </div>
                         <div>
-                            <button className="movie_book_btn" onClick={() => navigate("/showList")}>Book tickets</button>
+                            <button className="movie_book_btn" onClick={() => navigate("/cinema")}>Book tickets</button>
                         </div>
                     </div>
                 </div>
