@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
-import '../css/carousel.css';
+import '../../css/carousel.css';
 import { useNavigate } from 'react-router-dom';
 
 const Carousel = () => {

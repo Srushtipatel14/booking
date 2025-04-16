@@ -1,6 +1,6 @@
 import "../css/movie.css";
 import { FaStar } from "react-icons/fa";
-import Footer from "./footer";
+import Footer from "./homeScreen/footer";
 import { useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 const Movie = () => {

@@ -1,4 +1,4 @@
-import "../css/footer.css";
+import "../../css/footer.css";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
-import "../css/search.css";
+import "../../css/search.css";
 import { useState } from "react";
 
 const Searchfield = () => {

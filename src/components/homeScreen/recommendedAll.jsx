@@ -1,10 +1,10 @@
-import Carousel from "../components/carousal";
-import Footer from "../components/footer";
+import Carousel from "./carousal";
+import Footer from "./footer";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import "../css/recommendedall.css";
+import "../../css/recommendedall.css";
 import { useState } from "react";
-const recommendedAll = () => {
+export const RecommendedAll = () => {
     const [showLanguages, setshowlanguages] = useState(false);
     const [showGenres, setShowGenres] = useState(false);
     const [showFormt, setShowFormat] = useState(false);
@@ -105,4 +105,3 @@ const recommendedAll = () => {
     );
 };
 
-export default recommendedAll;

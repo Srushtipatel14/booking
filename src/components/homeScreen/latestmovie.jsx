@@ -1,23 +1,21 @@
-import "../css/recommended.css";
+import "../../css/recommended.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-import {useNavigate} from "react-router-dom"
-const RecommendedMovie = () => {
-  const navigate=useNavigate();
-  
+
+const LatestMovie = () => {
   return (
-    <div className="container-fluid recommend_movie p-0">
+    <div className="container-fluid p-0" style={{backgroundColor:"#2C2B2B"}}>
       <div className="movie_wrapper mx-auto">
         <div className="d-flex justify-content-between mb-2 first_movie_sec">
-          <p className="title_font my-3">Recommended Movies</p>
-          <p className="text_font d-flex align-items-center gap-1" style={{cursor:"pointer"}} onClick={()=>navigate("/recommendedall")}>
+          <p className="title_font text-light my-3">Latest Movies</p>
+          <p className="text_font d-flex align-items-center gap-1" style={{cursor:"pointer"}}>
             See All <IoIosArrowForward />
           </p>
         </div>
 
-        <div className="movie_scroll">
+        <div className="movie_scroll mb-3">
           {[1, 2, 3, 4, 5, 6, 7].map((item) => (
-            <div key={item} className="movie-card p-0" onClick={()=>navigate("/movie")}>
+            <div key={item} className="movie-card p-0">
               <div style={{ height: "350px" }}>
                 <img
                   src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwFBFgTscQ8nz7a0Vi3BbA5OU0M4Wuu7itw&s`}
@@ -44,4 +42,4 @@ const RecommendedMovie = () => {
   );
 };
 
-export default RecommendedMovie;
+export default LatestMovie;

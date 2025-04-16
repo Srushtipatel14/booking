@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
-import UserLogin from "./components/userlogin";
-import UserOtp from "./components/otpscreen";
-import Success from "./components/success";
-import Searchfield from "./components/search";
+import UserLogin from "./components/auth/userlogin";
+import UserOtp from "./components/auth/otpscreen";
+import Success from "./components/auth/success";
+import Searchfield from "./components/navbar/search";
 import Movie from "./components/movie";
 import Show from "./components/show";
 import Seat from "./components/seat";
-import EditProfile from "./components/editProfile";
-import RecommendedAll from "./components/recommendedAll";
+import EditProfile from "./components/navbar/editProfile";
+import {RecommendedAll} from "./components/homeScreen/recommendedAll";
 import Cinema from "./components/cinema";
 import "./App.css";
 

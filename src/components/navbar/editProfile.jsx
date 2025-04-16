@@ -1,5 +1,5 @@
-import "../css/editprofile.css";
-import Footer from "./footer";
+import "../../css/editprofile.css";
+import Footer from "../homeScreen/footer";
 const EditProfile = () => {
     return (
         <div className="container-fluid edit_profile pt-3">
