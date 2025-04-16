@@ -7,7 +7,7 @@ const Seat = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="container-fluid p-0">
+        <div className="container-fluid p-0" style={{ minHeight: "100vh" }}>
             <div className="d-flex seat_top align-items-center justify-content-between px-3 pb-2">
                 <div className="d-flex justify-content-center align-items-center">
                     <div style={{ cursor: "pointer" }} onClick={() => navigate(-1)}> <RiArrowLeftWideFill size={40} /></div>

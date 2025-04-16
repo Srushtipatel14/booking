@@ -9,7 +9,7 @@ const Searchfield = () => {
     const [showDivSection, setShowDivSection] = useState(true)
 
     return (
-        <div className="container-fluid position-relative m-0 p-0">
+        <div className="container-fluid position-relative recommend_movie m-0 p-0" style={{ minHeight: "100vh" }}>
             <div className="d-flex align-items-center search_top justify-content-between px-3  py-5">
                 <div style={{ cursor: "pointer" }} onClick={() => navigate(-1)}>
                     <FiArrowLeft size={30} />

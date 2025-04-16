@@ -4,10 +4,10 @@ import { FaStar } from "react-icons/fa";
 
 const UpcomingMovie = () => {
   return (
-    <div className="container-fluid p-0" style={{backgroundColor:"#2C2B2B"}}>
-      <div className="movie_wrapper mx-auto">
+    <div className="container-fluid p-0 recommend_movie" >
+      <div className="movie_wrapper mx-auto py-3">
         <div className="d-flex justify-content-between mb-2 first_movie_sec">
-          <p className="title_font text-light mt-3">Upcoming Movies</p>
+          <p className="title_font my-3">Upcoming Movies</p>
           <p className="text_font d-flex align-items-center gap-1" style={{cursor:"pointer"}}>
             See All <IoIosArrowForward />
           </p>
@@ -28,12 +28,12 @@ const UpcomingMovie = () => {
                   alt="movie"
                 />
               </div>
-              <div className="rating_card p-2">
+              {/* <div className="rating_card p-2">
                 <p className="m-0 d-flex align-items-center fs-5 gap-1">
                   <FaStar size={20} color="red" />
                   8/10 37.3K Votes
                 </p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

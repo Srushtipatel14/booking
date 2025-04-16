@@ -70,7 +70,7 @@
 }
 
 .search_top{
-  background-color:rgba(237, 237, 237, 0.5);
+  background-color:rgba(243, 243, 243);
 }
 
 .custom_modal{
@@ -86,4 +86,8 @@
 
 .form-control:focus{
  border-color: #dee2e6 !important;
+}
+
+.navbar_bg{
+  background: var(--secondary-sub-color);
 }

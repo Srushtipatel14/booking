@@ -11,7 +11,7 @@ const recommendedAll = () => {
     return (
         <div className="container-fluid m=0 recommed_all">
             <Carousel />
-            <div className=" d-flex mt-5 main_movie gap-5">
+            <div className=" d-flex mt-5 pb-3 main_movie gap-5">
                 <div className="left_fliter">
                     <div className="fs-3 fw-bold">Filters</div>
                     <div className="language_filter p-3 mt-3">

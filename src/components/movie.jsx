@@ -43,13 +43,13 @@ const Movie = () => {
                     </div>
                 </div>
             </div>
-            <div className="about_movie py-4">
+            <div className="about_movie py-4 recommend_movie">
                 <p className="about_movie_title">About The Movie</p>
                 <p>
                     Sikandar follows the journey of a man who overcomes all hurdles that life throws his way just so that he can alleviate the plight of the less fortunate and those in need of his help. His transition from a nonchalant man to a selfless man, inspired by his wife, makes him emerge as a beacon of hope for those ensnared in darkness.
                 </p>
             </div>
-            <div className="about_movie py-4">
+            <div className="about_movie py-4 recommend_movie">
                 <p className="about_movie_title">Cast</p>
 
                 <div className="cast_scroll mt-4">

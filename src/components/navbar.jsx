@@ -10,9 +10,9 @@ const Navbar = () => {
   const [topCanvas, setTopCanvas] = useState(false)
   const navigate = useNavigate();
   return (
-    <div className="container-fluid p-0 bg-light">
+    <div className="container-fluid p-0 navbar_bg">
       <div className="navbar-wrapper mx-auto">
-        <nav className="navbar navbar-light px-2 py-2 d-flex justify-content-between align-items-center">
+        <nav className="navbar px-2 py-2 d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center gap-4">
             <div className="d-flex align-items-center gap-1" style={{cursor:"pointer"}} onClick={()=>navigate("/")}>
               <img
